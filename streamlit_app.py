@@ -20,7 +20,7 @@ uploaded_file = st.file_uploader("Upload an image...", type=["jpg", "jpeg", "png
 
 #(for now) Show picture when button clicked
 if uploaded_file is not None:
-    if st.button("Show Image"):
+    if st.button("Show Image..."):
         image = Image.open(uploaded_file)
-        st.image(image, caption="yup", use_column_width=True)
+        st.image(image, use_container_width=True)
     
